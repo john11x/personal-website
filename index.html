@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Obowu - Personal Website</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      overflow: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid white;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+
+    h1 { font-size: 2.5em; margin-bottom: 10px; }
+    .subtitle { font-size: 1.2em; opacity: 0.9; }
+
+    nav {
+      background: #f8f9fa;
+      padding: 15px;
+      text-align: center;
+      border-bottom: 2px solid #e9ecef;
+    }
+
+    nav a {
+      color: #667eea;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover { color: #764ba2; }
+
+    .content { padding: 40px; }
+    section { margin-bottom: 40px; }
+
+    h2 {
+      color: #667eea;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #667eea;
+      font-size: 1.8em;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .info-item {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 8px;
+      border-left: 4px solid #667eea;
+    }
+
+    .info-label {
+      font-weight: bold;
+      color: #667eea;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .timeline-item {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      border-left: 4px solid #764ba2;
+    }
+
+    .timeline-item h3 { color: #764ba2; margin-bottom: 8px; }
+    .timeline-date { color: #666; font-style: italic; font-size: 0.9em; }
+
+    .hobbies-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .hobby-tag {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: 600;
+    }
+
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .link-card {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .link-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+    }
+
+    .link-card h3 { color: #667eea; margin-bottom: 8px; }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .social-links { margin-top: 15px; }
+    .social-links a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .pictorial-profile {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .pictorial-profile img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 6px solid #667eea;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="JOHN PASSPORT CROP.jpg" alt="John Obowu" class="profile-img">
+      <h1>John Obowu</h1>
+      <p class="subtitle">Student | Developer | Innovator</p>
+    </header>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#links">Links</a>
+    </nav>
+
+    <div class="content">
+      <section id="about">
+        <h2>Personal Details</h2>
+        <div class="info-grid">
+          <div class="info-item"><span class="info-label">Full Name:</span> John Obowu</div>
+          <div class="info-item"><span class="info-label">Gender:</span> Male</div>
+          <div class="info-item"><span class="info-label">Date of Birth:</span> January 7, 2004</div>
+          <div class="info-item"><span class="info-label">Email:</span> johnaobowu@gmail.com</div>
+          <div class="info-item"><span class="info-label">Location:</span> Nairobi, Kenya</div>
+          <div class="info-item"><span class="info-label">Phone:</span> +254 795 284 827</div>
+        </div>
+
+        <div class="pictorial-profile">
+          <p>Hello! I'm John Obowu, a passionate technology enthusiast currently pursuing a Bachelor of Science in Applied Computer Technology at USIU-Africa. I enjoy learning new technologies, building creative solutions, and exploring innovations that make life easier and more connected.</p>
+        </div>
+      </section>
+
+      <section id="education">
+  <h2>Educational Background</h2>
+  
+  <div class="timeline-item">
+    <h3>BSc. Applied Computer Technology</h3>
+    <p class="timeline-date">2022 - Present</p>
+    <p>United States International University - Africa (USIU-Africa), Nairobi, Kenya</p>
+  </div>
+
+  <div class="timeline-item">
+    <h3>West African Senior School Certificate Examination (WASSCE)</h3>
+    <p class="timeline-date">2014 - 2020</p>
+    <p>Preston International School, Akure, Ondo State, Nigeria</p>
+  </div>
+
+  <div class="timeline-item">
+    <h3>Primary School Leaving Certificate (PSLC)</h3>
+    <p class="timeline-date">2009 - 2014</p>
+    <p>Little Teddies Play Group Nursery and Primary School, Port Harcourt, Rivers State, Nigeria</p>
+  </div>
+</section>
+
+
+      <section id="hobbies">
+        <h2>Hobbies & Interests</h2>
+        <div class="hobbies-list">
+          <span class="hobby-tag">🖥️ Programming</span>
+          <span class="hobby-tag">📚 Reading</span>
+          <span class="hobby-tag">⚽ Football</span>
+          <span class="hobby-tag">🎮 Gaming</span>
+          <span class="hobby-tag">🎵 Music</span>
+          <span class="hobby-tag">✈️ Traveling</span>
+          <span class="hobby-tag">📸 Photography</span>
+          <span class="hobby-tag">🎬 Movies</span>
+        </div>
+      </section>
+
+      <section id="links">
+        <h2>Favourite Links</h2>
+        <div class="links-grid">
+          <a href="https://www.linkedin.com/in/john-jr-obowu-a4729b200/" class="link-card" target="_blank">
+            <h3>LinkedIn</h3>
+            <p>Connect with me professionally</p>
+          </a>
+          <a href="https://github.com/john11x" class="link-card" target="_blank">
+            <h3>GitHub</h3>
+            <p>Explore my coding projects</p>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 John Obowu. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/john-jr-obowu-a4729b200/">LinkedIn</a>
+        <a href="https://github.com/john11x">GitHub</a>
+        <a href="mailto:johnaobowu@gmail.com">Email</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
